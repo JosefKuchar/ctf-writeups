@@ -1,5 +1,5 @@
 # BADNONCE PART 1
-The goal for clear steal the flag from admin's (crawler's) cookies via XSS. There was just one little problem - CSP (Content Security Policy) protection. Basically you have to add nonce attribute with specific value to every script tag in the page to run. Luckily the nonce was based on php sessid so it wasn't changing with every request. We can bruteforce the nonce with css selectors (http://sirdarckcat.blogspot.com/2016/12/how-to-bypass-csp-nonces-with-dom-xss.html) and that's it.
+The goal was clear - steal the flag from admin's (crawler's) cookies via XSS. There was just one little problem - CSP (Content Security Policy) protection. Basically you have to add nonce attribute with specific value to every script tag in the page to run. Luckily the nonce was based on php sessid so it wasn't changing with every request. We can bruteforce the nonce with css selectors (http://sirdarckcat.blogspot.com/2016/12/how-to-bypass-csp-nonces-with-dom-xss.html) and that's it.
 
 ### SRC of the page
 ```html
